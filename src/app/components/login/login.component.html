@@ -1,1 +1,26 @@
-<p>login works!</p>
+<div class="h-screen mx-auto flex items-center md:w-3/4 lg:w-3/5">
+    <div class="w-4/5 mx-auto border rounded py-8 px-12">
+        <h1 class="text-3xl text-center mb-5">Login</h1>
+        <form [formGroup]="formLogin">
+            <div>
+                <div>
+                    <label for="email">Correo</label>
+                </div>
+                <div class="mb-7">
+                    <input class="border py-2 px-2 rounded w-full" type="text" id="email" placeholder="Ingresar correo" formControlName="email">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="password">Password</label>
+                </div>
+                <div class="mb-7">
+                    <input class="border py-2 px-2 rounded w-full" type="password" id="password" placeholder="Contraseña" formControlName="password">
+                </div>
+            </div>
+            <div>
+                <button class="bg-green-500 text-white py-2 px-8 rounded" (click)="onSubmit()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

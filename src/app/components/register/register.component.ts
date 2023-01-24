@@ -23,6 +23,7 @@ export class RegisterComponent implements OnInit{
   ngOnInit(): void {
   }
 
+  // Mi funcion onSubmit llamo a mi servicio - registro y mando los valores de mi formulario.
   onSubmit(){
     //VERIFICAMOS POR CONSOLE SI OBTENEMOS LOS DATOS INGRESADOS EN REGISTRO.
     //console.log(this.formRegister.value); 
